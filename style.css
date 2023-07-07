@@ -16,3 +16,136 @@ html{
 button:hover{
     cursor: pointer;
 }
+
+/*info container*/
+
+.info_container{
+    margin: 2rem;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.info{
+    border: 1px solid gray;
+    margin: 1rem;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 8px;
+    min-width: 300px ;
+    
+}
+
+.info button{
+    margin: 1em;
+    padding: 1em;
+    border-radius: 5px;
+    font-size: 16px;
+}
+.info p{
+    margin: 0.5em;
+    font-size: 18px;
+}
+
+
+/*amenities container*/
+
+.amenities_container{
+    display: flex;
+    flex-direction: column;
+    margin: 2rem;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.amenities_container h2{
+    font-size: 30px;
+    font-weight: 600;
+    border-bottom: 1px solid gray;
+    padding-bottom: 0.3em;
+    margin: 1em;
+
+}
+
+.amenities{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.amenity{
+    /*border: 1px solid gray;*/
+    margin: 1em;
+    min-width: 288px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: aliceblue;
+    border-radius: 8px;
+}
+
+.amenity p{
+    font-weight: 500;
+}
+
+.amenity img{
+    width: 60px;
+    margin: 0.8em;
+}
+
+/*price section*/
+
+.price_container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.price_container h2{
+    
+    margin: 2rem;
+    border-bottom: 1px solid gray;
+    padding-bottom: 0.5em;
+}
+
+.price_list{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.price_item{
+   /* border: 1px solid gray;*/
+    margin: 2em;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-width: 200px;
+    border-radius: 15px;
+    background-color: aliceblue;
+    box-shadow: 7px 11px 12px 0px rgba(0,0,0,0.1);
+}
+
+.heading{
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 1em;
+}
+
+.content{
+    margin: 0.5em;
+    font-size: 18px;
+}
+
+
+
+
