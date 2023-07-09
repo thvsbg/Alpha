@@ -27,15 +27,18 @@ button:hover{
 }
 
 .info{
-    border: 1px solid gray;
+    /*border: 1px solid gray;*/
     margin: 1rem;
     padding: 1.5rem;
+    min-width: 352px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
     border-radius: 8px;
     min-width: 300px ;
+    background-color: aliceblue;
+    box-shadow: 7px 11px 12px 0px rgba(0,0,0,0.1);
     
 }
 
@@ -145,6 +148,80 @@ button:hover{
     margin: 0.5em;
     font-size: 18px;
 }
+
+/*Location*/
+
+.location_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.location_content{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 2rem;
+    padding: 20px;
+    background-color: aliceblue;
+}
+
+.location_content img{
+    width: 40%;
+}
+
+.location_container h2{
+    
+    border-bottom: 1px solid gray;
+    padding-bottom: 0.5em;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.location_content li{
+    margin: 1em;
+}
+
+/*media queries location*/
+
+@media screen and (max-width:1000px) {
+    .location_content{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .location_content img{
+        width: 100%;
+        margin: 1rem;
+    }
+    
+}
+
+/*Floor plan*/
+
+.floorplan_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem;
+}
+
+.floorplan_container img{
+    width: 65%;
+    margin: 2rem;
+    
+}
+
+.floorplan_container h2{
+    border-bottom: 1px solid gray;
+    padding-bottom: 0.5em;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+
 
 
 
