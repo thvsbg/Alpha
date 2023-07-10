@@ -8,38 +8,65 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav>
-        <p><a href="#home">Home</a></p>
-        <p><a href="#overview">Overview</a></p>
-        <p><a href="#amenities">Amenities</a></p>
-        <p><a href="#price">Price</a></p>
-        <p><a href="#floorplan">Floor Plan</a></p>
-        <p><a href="#connectivity">Connectivity</a></p>
-        <p><a href="#faq">FAQ</a></p>
-        <p><a href="#footer">Contact Us</a></p>
-    </nav>
+    <div class="header">
+        <i id="menu-btn" class="fa-solid fa-bars"></i>
+        <nav class="navbar-container">
+          <p><a href="#home">Home</a></p>
+          <p><a href="#overview">Overview</a></p>
+          <p><a href="#amenities">Amenities</a></p>
+          <p><a href="#price">Price</a></p>
+          <p><a href="#floorplan">Floor Plan</a></p>
+          <p><a href="#connectivity">Connectivity</a></p>
+          <p><a href="#faq">FAQ</a></p>
+          <p><a href="#contact">Contact Us</a></p>
+        </nav>
+    </div>
 
-    <div class="home_container" id="home">
-        <ul>
-            <li>Post Possession 175 per sq. ft. Lease Guarantee</li>
-            <li>12% Assured returns</li>
-            <li>Mall in the sky connecting two towers</li>
-            <li>Investment starts from 15 Lakhs* onwards</li>
-            <li>Approved by Tata Capital</li>
-            
-        </ul>
+    <div class="banner"></div>
+    <div class="home-container" id="home">
+        <div class="home-content">
+            <ul>
+                <li>Post Possession 175 per sq. ft. Lease Guarantee</li>
+                <li>12% Assured returns</li>
+                <li>Mall in the sky connecting two towers</li>
+                <li>Investment starts from 15 Lakhs* onwards</li>
+                <li>Approved by Tata Capital</li>
+                <li>Helipad and ample parking facilities</li>
+            </ul>
+            <button>Enquire Now!</button>
+        </div>
 
-        <button>Enquire Now!</button>
+        <div class="form-container">
+            <form id="formid">
+                <h3>Premium Office and Rental Spaces</h3>
+                <a><i class="fa fa-phone"></i>9310207305 / 9354970067</a>
+                <input type="text" id="name" name="name" placeholder="Enter Your Name">
+                <input type="email" id="email" name="email" placeholder="Enter Your Email-id">
+                <input type="number" id="mobile" name="mobile" placeholder="Enter Your Mobile-No">
+                <input type="text" id="comment" name="comment" placeholder="Drop your Query">
+                <button type="submit" id="submitbtn">Submit</button>
+            </form>
+        </div>
+    </div>
 
-        <form id="formid">
-            <p>Premium Office and Rental Spaces</p>
-            <p>Sir ka number</p>
-            <input type="text" id="name" name="name" placeholder="Enter Your Name">
-            <input type="email" id="email" name="email" placeholder="Enter Your Email-id">
-            <input type="number" id="mobile" name="mobile" placeholder="Enter Your Mobile-No">
-            <input type="text" id="comment" name="comment" placeholder="Write down your Query">
-            <button type="submit" id="submitbtn"></button>
-        </form>
+    <!-- Form Popup Section -->
+    <div class="form-popup" id="form-popup">
+        <div class="form-content animate">
+            <img src="images/form-bg.jpg" alt="">
+            <div class="form-heading">
+                <span class="close-modal" id="close-form" title="Close Signup Form">&times;</span>
+                <h1>Greater Noida West </h1>
+                <p>Office Space,Retail Space</p>
+                <h2>₹40* Lakh Onwards</h2>
+                <form id="formid1">
+                    <input type="text" name="name1" id="name1" placeholder="Enter Your Name" required>
+                    <input type="email" name="email1" id="email1" placeholder="Enter Your Email-id" required>
+                    <input type="number" name="mobile1" id="mobile1" placeholder="Enter Your Mobile-No" required>
+                    <input type="text" name="comment1" id="comment1" placeholder="Write down your Comments" required>
+                    <button type="submit" id="submitbtn1">Submit</button>
+                </form>
+            </div>
+        </div>
     </div>
 
     <div class="info_container">
