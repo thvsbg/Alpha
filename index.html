@@ -6,8 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alphathum</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script>
+      import Swal from 'sweetalert2';
+      const Swal=require('sweetalert2');
+    </script>
+
 </head>
 <body>
+
+    <!-- Nav Section -->
     <div class="header">
         <i id="menu-btn" class="fa-solid fa-bars"></i>
         <nav class="navbar-container">
@@ -22,6 +31,7 @@
         </nav>
     </div>
 
+    <!-- Home Section -->
     <div class="banner"></div>
     <div class="home-container" id="home">
         <div class="home-content">
@@ -33,7 +43,7 @@
                 <li>Approved by Tata Capital</li>
                 <li>Helipad and ample parking facilities</li>
             </ul>
-            <button>Enquire Now!</button>
+            <button type="submit" id="enquire-btn">Enquire Now!</button>
         </div>
 
         <div class="form-container">
@@ -52,12 +62,12 @@
     <!-- Form Popup Section -->
     <div class="form-popup" id="form-popup">
         <div class="form-content animate">
-            <img src="images/form-bg.jpg" alt="">
+            <img src="images/banners.jpg" alt="">
             <div class="form-heading">
                 <span class="close-modal" id="close-form" title="Close Signup Form">&times;</span>
-                <h1>Greater Noida West </h1>
+                <h1>Bhutani Alphathum</h1>
                 <p>Office Space,Retail Space</p>
-                <h2>₹40* Lakh Onwards</h2>
+                <h2>₹33.5* Lacs Onwards</h2>
                 <form id="formid1">
                     <input type="text" name="name1" id="name1" placeholder="Enter Your Name" required>
                     <input type="email" name="email1" id="email1" placeholder="Enter Your Email-id" required>
@@ -69,12 +79,13 @@
         </div>
     </div>
 
+
     <div class="info_container">
         <div class="info">
             <p>50:50 Payment Plan</p>
             <p>Premium Office Spaces</p>
             <p>Lease Guarantee Post Possesion</p>
-            <button>Get Quote</button>
+            <button type="submit" id="price-btn-1">Get Quote</button>
             
         </div>
 
@@ -82,7 +93,7 @@
             <p>Cyber Park office spaces</p>
             <p>Starting at 7990/- per Sq.ft</p>
             <p>Get yours Now!</p>
-            <button>Get Quote</button>
+            <button type="submit" id="price-btn-2">Get Quote</button>
             
 
         </div>
@@ -91,7 +102,7 @@
             <p>62 Avenue-Premium Retail Space</p>
             <p>12% Assured Return</p>
             <p>Invest Now-High Return</p>
-            <button>Get Quote</button>
+            <button type="submit" id="price-btn-3">Get Quote</button>
             
         </div>
     </div>
@@ -289,6 +300,9 @@
       </div>
 
     </div>
+
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="script.js"></script>
 
 </body>
 </html>

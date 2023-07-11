@@ -20,7 +20,7 @@ button:hover{
 /* Nav Section */
 .header{
     display: flex;
-    padding: 1rem;
+    padding: 1rem 2.5rem;
     align-items: center;
     justify-content: end;
 }
@@ -97,6 +97,9 @@ button:hover{
     color: #10345b;
     margin-bottom: 4%;
 }
+.form-container form a i{
+    margin-right: 6px;
+}
 .form-container input,.form-container button{
     width: 80%;
     margin-bottom: 1.5em;
@@ -151,7 +154,7 @@ button:hover{
 }
 .form-heading form input{
     display: block;
-    border:1px solid black;
+    border:1px solid #777;
     padding: 0.5em;
     font-size: 1.24vw;
     width: 95%;
@@ -159,7 +162,7 @@ button:hover{
     border-radius: 5px;
 }
 .form-heading p{
-    color: rgb(1, 1, 110);
+    color: #10345b;
     font-weight: bold;
     font-size: 1.5vw;
 }
@@ -175,7 +178,7 @@ button:hover{
     border-radius: 5px;
 }
 .form-heading form input::placeholder{
-    color: black;
+    color: #777;
 }
 .close-modal{
     display: block;
@@ -200,6 +203,29 @@ button:hover{
 }
 .form-popup{
     display: none;
+}
+
+/* Overview Section */
+.overview_container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem;
+}
+.overview_container h2{
+    font-size: 30px;
+    font-weight: 600;
+    border-bottom: 1px solid gray;
+    padding-bottom: 0.3em;
+    width:fit-content;
+    margin: 1em;
+}
+.overview_container p{
+    letter-spacing: 1.5px;
+    line-height: 30px;
+    width: 85%;
+    display: inline-block;
 }
 
 /*info container*/
@@ -455,6 +481,64 @@ button:hover{
 /* media queries  */
 
 /* nav section */
+@media screen and (min-width:1000px) {
+    .header p::after{
+        content: "";
+        display: block;
+        height: 3.5px;
+        transform: scaleX(0);
+        background-color:black;
+        transition: transform 300ms;
+    }
+    .header p:hover::after{
+        transform: scaleX(1);
+    }  
+}
+@media screen and (max-width:1000px) {
+    .header{
+        position: relative;
+    }
+    .header nav{
+        position: absolute;
+        display: block;
+        top:99%;
+        left:0;
+        right: 0;
+        z-index: 5;
+        width: 100%;
+        background-color: white;
+    }
+    .navbar-container{
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+    .header nav p:nth-child(1){
+        border-top: 1px solid black;
+    }
+    .header nav p{
+        display: block;
+        text-align: center;
+        padding: 0.8em;
+        border-bottom: 1px solid black;
+    }
+    .header nav a:hover{
+        color: #7a5833;
+    }
+    .header img{
+        width: 10%;
+    }
+    #menu-btn{
+        display: block;
+        padding: 10px;
+        border: 2px solid black;
+        border-radius: 5px;
+        font-size: 1.3em;
+    }
+    .open-menu{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+}
+
+/* home section */
 @media screen and (max-width:1000px) {
     .home-container{
         position: absolute;
@@ -527,7 +611,7 @@ button:hover{
         z-index: 2;
     }
     .form-container{
-        width: 60%;
+        width: 65%;
     }
     .form-container form h3{
         font-size: medium;
@@ -568,6 +652,66 @@ button:hover{
         font-size: 2.5vw;
     }
 }
+
+/* Form Popup Section */
+@media screen and (max-width:1300px) {
+    .form-popup .form-content{
+        width:80%;
+        position: relative;
+    }
+    .close-modal{
+        position: absolute;
+        top:0;
+        right: 0;
+    }
+    .form-heading form input,.form-heading form button{
+        padding: 0.6em;
+        font-size: 1.45vw;
+    }
+    .form-heading p{
+        font-size: 1.4em;
+    }
+}
+@media screen and (max-width:1000px) {
+    .form-heading form input,.form-heading form button{
+        padding: 0.75em;
+        font-size: 1.75vw;
+    }
+    .form-heading p{
+        font-size: 1.3em;
+    }
+}
+@media screen and (max-width:800px) {
+    .form-popup .form-content{
+        width:95%;
+        position: relative;
+    }
+    .form-content img{
+        height: 60vh;
+    }
+    .form-heading form input,.form-heading form button{
+        font-size: 1.95vw;
+    }
+    .form-heading{
+        margin-top: 2.5em;
+    }
+}
+@media screen and (max-width:500px) {
+    .form-heading form input,.form-heading form button{
+        font-size: 3.5vw;
+    }
+    .form-content img{
+        display: none;
+    }
+    .form-popup .form-content{
+        padding: 1em;
+        margin: 4em auto;
+    }
+    .form-content{
+        grid-template-columns: 1fr;
+    }
+}
+
 
 /* location */
 @media screen and (max-width:1000px) {
