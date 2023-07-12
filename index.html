@@ -6,9 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alphathum</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script>
+      import Swal from 'sweetalert2';
+      const Swal=require('sweetalert2');
+    </script>
+    
 </head>
 <body>
     <div class="header">
+        <img style="width: 120px;" src="images/logo.jpeg" />
         <i id="menu-btn" class="fa-solid fa-bars"></i>
         <nav class="navbar-container">
           <p><a href="#home">Home</a></p>
@@ -21,11 +29,12 @@
           <p><a href="#contact">Contact Us</a></p>
         </nav>
     </div>
-
     <div class="banner"></div>
     <div class="home-container" id="home">
         <div class="home-content">
+            <p style="font-size:35px;color: aqua;">ALPHATHUM</p>
             <ul>
+    
                 <li>Post Possession 175 per sq. ft. Lease Guarantee</li>
                 <li>12% Assured returns</li>
                 <li>Mall in the sky connecting two towers</li>
@@ -33,7 +42,7 @@
                 <li>Approved by Tata Capital</li>
                 <li>Helipad and ample parking facilities</li>
             </ul>
-            <button>Enquire Now!</button>
+            <button type="submit" id="enquire-btn">Enquire Now!</button>
         </div>
 
         <div class="form-container">
@@ -49,15 +58,16 @@
         </div>
     </div>
 
+
     <!-- Form Popup Section -->
     <div class="form-popup" id="form-popup">
         <div class="form-content animate">
-            <img src="images/form-bg.jpg" alt="">
+            <img src="images/banners.jpg" alt="">
             <div class="form-heading">
                 <span class="close-modal" id="close-form" title="Close Signup Form">&times;</span>
-                <h1>Greater Noida West </h1>
+                <h1>Bhutani Alphathum</h1>
                 <p>Office Space,Retail Space</p>
-                <h2>₹40* Lakh Onwards</h2>
+                <h2>₹33.5* Lacs Onwards</h2>
                 <form id="formid1">
                     <input type="text" name="name1" id="name1" placeholder="Enter Your Name" required>
                     <input type="email" name="email1" id="email1" placeholder="Enter Your Email-id" required>
@@ -74,15 +84,15 @@
             <p>50:50 Payment Plan</p>
             <p>Premium Office Spaces</p>
             <p>Lease Guarantee Post Possesion</p>
-            <button>Get Quote</button>
+            <button type="submit" id="price-btn-1">Get Quote</button>
             
         </div>
 
         <div class="info">
             <p>Cyber Park office spaces</p>
-            <p>Starting at 7990/- per Sq.ft</p>
+            <p>Starting at 6250/- per Sq.ft</p>
             <p>Get yours Now!</p>
-            <button>Get Quote</button>
+            <button type="submit" id="price-btn-2">Get Quote</button>
             
 
         </div>
@@ -91,15 +101,16 @@
             <p>62 Avenue-Premium Retail Space</p>
             <p>12% Assured Return</p>
             <p>Invest Now-High Return</p>
-            <button>Get Quote</button>
+            <button type="submit" id="price-btn-3">Get Quote</button>
             
         </div>
     </div>
 
+
     <div class="overview_container" id="overview">
         <h2>Overview</h2>
         <p>Bhutani Alphathum is commercial project by the reputed Bhutani Group. Alphathum is beautifully and strategically situated in Sector-90, Noida.
-            t has offices ranging in size from 200 square feet and up.The three towers of Bhutani Alphathum are joined by the largest rooftop infinity pool in the world
+            It has offices ranging in size from 200 square feet and up.The three towers of Bhutani Alphathum are joined by the largest rooftop infinity pool in the world
             The Bhutani Infra Alphathum project includes cutting-edge business suites, an incubator, premium offices, and terrace gardens. There will be very efficient design and very good security with CCTV cameras in common areas.
             There is a facility of avail bank loans for units in this project on easy terms form leading institutions like LIC Housing Finance, HDFC, ICICI Bank, SBI and others.
             Bhutani Infra has delivered many projects in the past, including Bhutani CyberPark, Bhutani World Square Mall, and Ithum, and has a stellar track record of on-time delivery. The builder is well-known in the industry for delivering on time. The builder has received numerous awards for construction quality and design.
@@ -201,11 +212,12 @@
 
     <div class="faq_container" id="faq">
         <div class="accordion">
+            <h2>FAQ</h2>
             <div class="accordion-item" id="question1">
                 <a class="accordion-link" href="#question1">
                     What is Bhutani Alphathum?
-                    <img src="./images/plus.png" style="width: 16px;"/>
-                    <img src="./images/minus.png" style="width: 16px;" />
+                    <img class="plus" src="./images/plus.png" style="width: 16px;"/>
+                    <img class="minus" src="./images/minus.png" style="width: 16px;" />
                 </a>
                 <div class="answer">
                     <p>
@@ -219,8 +231,8 @@
             <div class="accordion-item" id="question2">
                 <a class="accordion-link" href="#question2">
                     Why invest in Bhutani Alphathum?
-                    <img src="./images/plus.png" style="width: 16px;"/>
-                    <img src="./images/minus.png" style="width: 16px;" />
+                    <img class="plus" src="./images/plus.png" style="width: 16px;"/>
+                    <img class="minus" src="./images/minus.png" style="width: 16px;" />
                 </a>
                 <div class="answer">
                     <p>
@@ -233,8 +245,8 @@
             <div class="accordion-item" id="question3">
                 <a class="accordion-link" href="#question3">
                     How to download the brochure for Bhutani Alphathum?
-                    <img src="./images/plus.png" style="width: 16px;"/>
-                    <img src="./images/minus.png" style="width: 16px;" />
+                    <img class="plus" src="./images/plus.png" style="width: 16px;"/>
+                    <img class="minus" src="./images/minus.png" style="width: 16px;" />
                 </a>
                 <div class="answer">
                     <p>
@@ -247,8 +259,8 @@
             <div class="accordion-item" id="question4">
                 <a class="accordion-link" href="#question4">
                     What are the benefits of investing in Bhutani Alphathum?
-                    <img src="./images/plus.png" style="width: 16px;"/>
-                    <img src="./images/minus.png" style="width: 16px;" />
+                    <img class="plus" src="./images/plus.png" style="width: 16px;"/>
+                    <img class="minus" src="./images/minus.png" style="width: 16px;" />
                 </a>
                 <div class="answer">
                     <p>
@@ -265,7 +277,7 @@
 
     </div>
 
-    <div class="contact" id="footer">
+    <div class="contact_container" id="contact">
         
         <div class="contact_top">
             <div class="contact_left">   
@@ -285,10 +297,13 @@
                 </form>
             </div>
         </div>
-        <p class="disclaimer">Disclaimer:This site is for information purpose only and should not be treated as the official information.</p>
+        <p class="disclaimer">Disclaimer:This site is for information purpose only and should not be treated as the official information.The layout, location, price and other information must not be treated as legal offer for sale.</p>
       </div>
 
     </div>
+
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="script.js"></script>
 
 
 
