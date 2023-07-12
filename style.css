@@ -334,6 +334,7 @@ button:hover{
     margin: 2rem;
     border-bottom: 1px solid gray;
     padding-bottom: 0.5em;
+    font-size: 30px;
 }
 
 .price_list{
