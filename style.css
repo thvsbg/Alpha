@@ -616,7 +616,16 @@ button:hover{
 
 }
 
+
 /*media queries */
+
+/*faq*/
+
+.accordion-item:target .answer{
+    max-height: 90rem;
+
+}
+
 
 /*nav*/
 @media screen and (min-width:1000px) {
